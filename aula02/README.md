@@ -1,12 +1,35 @@
-# React + Vite
+🎰 Sorteadores de Números: Mega Sena e Quina com React Hooks
+Projeto desenvolvido para a disciplina de Front-End Avançado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto implementa dois simuladores de sorteio numérico usando React Hooks, reproduzindo os mecanismos dos jogos da Mega Sena e Quina brasileiros.
 
-Currently, two official plugins are available:
+Tecnologias Utilizadas
+React (Componentes funcionais)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Hooks (useState para gerenciamento de estado)
 
-## Expanding the ESLint configuration
+JavaScript
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Componentes Principais
+
+App.jsx - Componente Raiz
+Função: Orquestra a renderização dos dois componentes de sorteio.
+
+HookMegasena.js - Sorteio da Mega Sena
+HookQuina.js - Sorteio da Quina
+
+🔍 Funcionalidades Principais
+Componente	Intervalo Numérico	Quantidade	Lógica de Sorteio
+Mega Sena	1-60	6 números	Math.floor(Math.random() * 60) + 1
+Quina	1-80	5 números	Math.floor(Math.random() * 80) + 1
+
+📌 Próximas Melhorias
+Adicionar botão para reiniciar sorteios
+
+Implementar verificação de números repetidos
+
+Adicionar animações durante o sorteio
+
+Melhorar a interface com CSS
+
+Adicionar responsividade para mobile
